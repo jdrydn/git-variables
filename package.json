@@ -1,7 +1,7 @@
 {
-  "name": "cdk-git-variables",
+  "name": "git-variables",
   "version": "1.0.0",
-  "description": "Git variables for CDK",
+  "description": "Git variables for NodeJS processes",
   "main": "./git.js",
   "scripts": {
     "lint": "eslint --ext .js .",
@@ -9,16 +9,15 @@
     "preversion": "npm run lint && npm test",
     "postversion": "git push && git push --tags"
   },
-  "repository": "https://github.com/someimportantcompany/cdk-git-variables",
-  "homepage": "https://github.com/someimportantcompany/cdk-git-variables#readme",
-  "bugs": "https://github.com/someimportantcompany/cdk-git-variables/issues",
+  "repository": "https://github.com/someimportantcompany/git-variables",
+  "homepage": "https://github.com/someimportantcompany/git-variables#readme",
+  "bugs": "https://github.com/someimportantcompany/git-variables/issues",
   "author": "jdrydn <james@jdrydn.com> (https://jdrydn.com)",
   "license": "MIT",
   "files": [
     "git.js"
   ],
   "keywords": [
-    "cdk",
     "git",
     "variables"
   ],
@@ -37,7 +36,7 @@
     "npm": ">= 6"
   },
   "_moduleAliases": {
-    "cdk-git-variables": "./"
+    "git-variables": "./"
   },
   "mocha": {
     "exit": true,
