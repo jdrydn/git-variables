@@ -43,16 +43,6 @@ describe('git-variables', () => {
     assert(typeof GIT_MESSAGE_SUBJECT === 'string', 'Expected GIT_MESSAGE_SUBJECT to be a string');
   });
 
-  it('should have a GIT_USER variable', () => {
-    const { GIT_USER } = git;
-    assert(typeof GIT_USER === 'string', 'Expected GIT_USER to be a string');
-  });
-
-  it('should have a GIT_EMAIL variable', () => {
-    const { GIT_EMAIL } = git;
-    assert(typeof GIT_EMAIL === 'string', 'Expected GIT_EMAIL to be a string');
-  });
-
   it('should have a GIT_IS_DIRTY variable', () => {
     const { GIT_IS_DIRTY } = git;
     assert(typeof GIT_IS_DIRTY === 'string', 'Expected GIT_IS_DIRTY to be a string');

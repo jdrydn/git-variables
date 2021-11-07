@@ -33,6 +33,6 @@ Variable | Command | Example
 `GIT_IS_DIRTY` | `git diff --stat` | `false`
 `GIT_REPOSITORY` | `git rev-parse --show-toplevel` | `git-variables`
 
-## Notes
+## Notes
 
 Any questions or suggestions please [open an issue](/someimportantcompany/git-variables/issues).
