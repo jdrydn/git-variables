@@ -1,0 +1,61 @@
+{
+  "name": "cdk-git-variables",
+  "version": "1.0.0",
+  "description": "Git variables for CDK",
+  "main": "./git.js",
+  "scripts": {
+    "lint": "eslint --ext .js .",
+    "test": "nyc mocha",
+    "preversion": "npm run lint && npm test",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": "https://github.com/someimportantcompany/cdk-git-variables",
+  "homepage": "https://github.com/someimportantcompany/cdk-git-variables#readme",
+  "bugs": "https://github.com/someimportantcompany/cdk-git-variables/issues",
+  "author": "jdrydn <james@jdrydn.com> (https://jdrydn.com)",
+  "license": "MIT",
+  "files": [
+    "git.js"
+  ],
+  "keywords": [
+    "cdk",
+    "git",
+    "variables"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-mocha": "^5.3.0",
+    "eslint-plugin-sort-requires": "^2.1.0",
+    "mocha": "^6.2.3",
+    "module-alias": "^2.2.2",
+    "nyc": "^15.1.0"
+  },
+  "engines": {
+    "node": ">= 10",
+    "npm": ">= 6"
+  },
+  "_moduleAliases": {
+    "cdk-git-variables": "./"
+  },
+  "mocha": {
+    "exit": true,
+    "require": [
+      "module-alias/register"
+    ],
+    "spec": [
+      "*.test.js"
+    ],
+    "ui": "bdd"
+  },
+  "nyc": {
+    "exclude": [
+      "*.test.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}
