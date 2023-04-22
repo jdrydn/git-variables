@@ -10,9 +10,6 @@ module.exports = {
     sourceType: "module",
     ecmaVersion: 8
   },
-  plugins: [
-    "sort-requires"
-  ],
   rules: {
     'accessor-pairs': "error",
     'array-callback-return': "error",
@@ -258,7 +255,6 @@ module.exports = {
     'sort-imports': "error",
     'sort-keys': "off",
     'sort-vars': "error",
-    'sort-requires/sort-requires': "error",
     'space-before-blocks': "error",
     'space-before-function-paren': "off",
     'space-in-parens': [
