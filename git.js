@@ -4,9 +4,9 @@ const path = require('path');
 function exec(cmd) {
   try {
     const result = child.execSync(cmd, { encoding: 'utf8', timeout: 1000 });
-    return typeof result === 'string' && result.trim().length > 0 ? result.trim() : null;
+    return typeof result === 'string' && result.trim().length > 0 ? result.trim() : undefined;
   } catch (err) /* istanbul ignore next */ {
-    return null;
+    return undefined;
   }
 }
 
