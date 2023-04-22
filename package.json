@@ -22,7 +22,7 @@
     "variables"
   ],
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
+    "@babel/eslint-parser": "^7.21.3",
     "eslint": "^8.39.0",
     "eslint-plugin-mocha": "^10.1.0",
     "mocha": "^10.2.0",
