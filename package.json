@@ -9,9 +9,9 @@
     "preversion": "npm run lint && npm test",
     "postversion": "git push && git push --tags"
   },
-  "repository": "https://github.com/jdrydn/git-variables",
-  "homepage": "https://github.com/jdrydn/git-variables#readme",
-  "bugs": "https://github.com/jdrydn/git-variables/issues",
+  "repository": "https://github.com/someimportantcompany/git-variables",
+  "homepage": "https://github.com/someimportantcompany/git-variables#readme",
+  "bugs": "https://github.com/someimportantcompany/git-variables/issues",
   "author": "jdrydn <james@jdrydn.com> (https://jdrydn.com)",
   "license": "MIT",
   "files": [
